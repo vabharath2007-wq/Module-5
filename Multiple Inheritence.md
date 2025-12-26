@@ -7,23 +7,55 @@ This Python program demonstrates **multiple inheritance** by performing basic ar
 To write a Python program to calculate **Add, Sub & Division** using **Multiple Inheritance**.
 
 ## 🧠 Algorithm
+1. create a class add with an method addition with instance 'a,b' and return a+b
+2. create a class sub with an method subtraction with instance 'a,b'  and return a-b
+3. create a class div with an method division with instance 'a,b'  and return a/b
+4. create a class clac inheriting classes'add,sub,and div' and pass
+5. get user input for a and b
+6. call the clac class
+7. print the addition,subtraction and division method by calling them
 
-1. **Define `Calculation1` class**
-   - Contains `Summation(a, b)` method to return the sum of two numbers.
-2. **Define `Calculation2` class**
-   - Contains `Subtraction(a, b)` method to return the difference of two numbers.
-3. **Define `Derived` class**
-   - Inherits from both `Calculation1` and `Calculation2`.
-   - Contains `Division(a, b)` method to return the division result.
-4. **Input**
-   - Prompt the user to enter two numbers.
-5. **Process**
-   - Create an object of the `Derived` class.
-   - Call `Summation`, `Subtraction`, and `Division` methods.
-6. **Output**
-   - Display the results of the three operations.
+
 
 ## 💻 Program 
-Add code here
+
+class add:
+    
+    def addition(self,a,b):
+    
+        return a+b
+    
+class sub:
+    
+    def subtraction(self,a,b):
+    
+        return a-b
+        
+class div:
+    
+    def division(self,a,b):
+    
+        return a/b
+        
+class clac(add,sub,div):
+    
+    pass
+
+a=int(input())
+
+b=int(input())
+
+c=clac()
+
+print(c.addition(a,b))
+
+print(c.subtraction(a,b))
+
+print(c.division(a,b))
+
 ## Output Example
 
+<img width="355" height="168" alt="image" src="https://github.com/user-attachments/assets/4efb2bef-24c0-4c13-bdd1-614da11113ae" />
+
+## Result
+Thus the program is simulated sucessfully
