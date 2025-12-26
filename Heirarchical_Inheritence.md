@@ -1,26 +1,8 @@
 # Hierarchical Inheritance in Python
 
-This Python project demonstrates **Hierarchical Inheritance** using a base class `Details` and two derived classes `Employee` and `Patient`. The program collects and displays details for both employees and patients.
-
 ## 🎯 Aim
 
 To write a Python program that uses **Hierarchical Inheritance** to input and display **Employee** and **Patient** details.
-
-## 📘 Description
-
-- **Base Class:** `Details`
-  - Stores common attributes: `name`, `age`
-  - Provides methods: `getName()`, `getAge()`
-
-- **Derived Class 1:** `Employee`
-  - Inherits from `Details`
-  - Adds: `employee_id`, `department`
-  - Method: `getEmployeeDetails()`
-
-- **Derived Class 2:** `Patient`
-  - Inherits from `Details`
-  - Adds: `patient_id`, `disease`
-  - Method: `getPatientDetails()`
 
 ## 🧠 Algorithm
 
@@ -31,6 +13,55 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 5. Display collected information using class methods.
 
 ## Program
-Add code here
+
+class details:
+    def get_basic(self):
+        self.id=int(input())
+        self.name=input()
+        self.gender=input()
+        
+class employee(details):
+    def get_employee_details(self):
+        self.company=input()
+        self.department=input()
+        
+    def display_employee(self):
+        print("Employee Object")
+        print(f"Id:  {self.id}")
+        print(f"Name:  {self.name}")
+        print(f"Gender:  {self.gender}")
+        print(f"Company:  {self.company}")
+        print(f"Department:  {self.department}")
+        print()
+
+class patient(details):
+    def get_patient_details(self):
+        self.hospital=input()
+        self.department=input()
+        
+    def display_patient(self):
+        print("Patient Object")
+        print(f"Id:  {self.id}")
+        print(f"Name:  {self.name}")
+        print(f"Gender:  {self.gender}")
+        print(f"Hospital:  {self.hospital}")
+        print(f"Department:  {self.department}")
+        
+        
+emp=employee()
+emp.get_basic()
+emp.get_employee_details()
+emp.display_employee()
+
+pat=patient()
+pat.get_basic()
+pat.get_patient_details()
+pat.display_patient()
+      
+
 ## Sample Output
 
+<img width="551" height="408" alt="image" src="https://github.com/user-attachments/assets/880c5b76-d94d-4cdb-8cc4-076aa11ee088" />
+
+## Result
+Thus the program is simulated sucessfully
