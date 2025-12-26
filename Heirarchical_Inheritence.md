@@ -52,13 +52,19 @@ class patient(details):
         
         
 emp=employee()
+
 emp.get_basic()
+
 emp.get_employee_details()
+
 emp.display_employee()
 
 pat=patient()
+
 pat.get_basic()
+
 pat.get_patient_details()
+
 pat.display_patient()
       
 
