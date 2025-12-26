@@ -1,32 +1,55 @@
 # Multilevel Inheritance Example in Python
 
-This Python project demonstrates the concept of **Multilevel Inheritance** to collect and display the **name**, **age**, and **location** of a person.
-
 ## 🎯 Aim
 
-To write a Python program that uses multilevel inheritance to get and display a person’s name, age, and location.
+Write a Python program to Get the name, age and salary of a person and display using Multilevel inheritance.
 
 ## 🧠 Algorithm
 
-1. **Parent Class**  
-   - `__init__(name)` initializes the `name` attribute.  
-   - `getName()` returns the `name`.
+1. create a class name having a method get that gets the user input for name
+2. create a class age inheriting the class name that gets the age user input
+3. create a class salary inheriting class age that gets the salary as user input
+4. class salary has another method show to print name,age,and salary
+5. call the salary class and call all the methods using salary class
 
-2. **Child Class (inherits Parent)**  
-   - `__init__(name, age)` initializes `name` using `super()` and adds `age`.  
-   - `getAge()` returns the `age`.
-
-3. **Grandchild Class (inherits Child)**  
-   - `__init__(name, age, location)` initializes `name` and `age` using `super()` and adds `location`.  
-   - `getLocation()` returns the `location`.
-
-4. **Input & Output**  
-   - Take user input for name, age, and location.  
-   - Create an instance of `Grandchild`.  
-   - Print all details using class methods.
 
 ## Program
-Add code here
+
+class name:
+    
+    def get(self):
+        
+        self.name=input()
+        
+class age(name):
+    
+    def ag(self):
+        
+        self.age=int(input())
+        
+class salary(age):
+    
+    def sal(self):
+        
+        self.salary=int(input())
+
+    def show(self):
+        
+        print(f"{self.name} {self.age} {self.salary}")
+        
+o=salary()
+
+o.get()
+
+o.ag()
+
+o.sal()
+
+o.show()
 
 ## Sample Output
 
+<img width="588" height="168" alt="image" src="https://github.com/user-attachments/assets/8bb02f58-a8bc-4752-ba4f-dd9d46d1f876" />
+
+## Result
+Thus the program is simulated sucessfully
