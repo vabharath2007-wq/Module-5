@@ -15,12 +15,14 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 ## Program
 
 class details:
+    
     def get_basic(self):
         self.id=int(input())
         self.name=input()
         self.gender=input()
         
 class employee(details):
+    
     def get_employee_details(self):
         self.company=input()
         self.department=input()
@@ -35,6 +37,7 @@ class employee(details):
         print()
 
 class patient(details):
+    
     def get_patient_details(self):
         self.hospital=input()
         self.department=input()
